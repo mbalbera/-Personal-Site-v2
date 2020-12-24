@@ -8,9 +8,9 @@ const Header = () => {
             </div>
             <div style={{display:'flex', justifyContent:'space-around', width:'60%'}}>
                 {/* <p style={{ color: 'rgb(255,255,255)', cursor:'pointer' }}>Home</p> */}
-                <p style={{ color: 'rgb(255,255,255)', cursor:'pointer' }}>Projects</p>
-                <p style={{ color: 'rgb(255,255,255)', cursor:'pointer' }}>Resume</p>
-                <p style={{ color: 'rgb(255,255,255)', cursor:'pointer' }}>Contact</p>
+                <p style={{ color: 'rgb(255,255,255)', cursor:'pointer', fontWeight:'bold' }}>Projects</p>
+                <p style={{ color: 'rgb(255,255,255)', cursor:'pointer', fontWeight:'bold' }}>Resume</p>
+                <p style={{ color: 'rgb(255,255,255)', cursor:'pointer', fontWeight:'bold' }}>Contact</p>
             </div>
         </div>
     )
