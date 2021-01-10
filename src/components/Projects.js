@@ -11,7 +11,7 @@ const Projects = (props) => {
             title: 'AllocateRite',
             image: AllocateRite,
             imageType:'web',
-            desc: 'An AI driven Fintech platform that can replace your financial advisor',
+            desc: 'An AI driven Fintech platform built to replace your financial advisor',
             b1: 'Developed web and mobile applications using React, React Native, and AWS.',
             b2: 'Utilized SSO Authentication with AWS cognito on both web and mobile platforms.',
             b3: 'Acted as the Product Owner to define the product vision, prioritize needs, oversee team wide development.',
@@ -20,7 +20,7 @@ const Projects = (props) => {
             title: 'Microbets',
             image: Microbets,
             imageType:'phone',
-            desc: 'A mobile sports-gambling platform that utilizes a swipe based user interface to improve UX for new and experienced gamblers',
+            desc: 'A mobile sports-gambling platform that utilizes a swipe based UX/UI',
             b1: 'Utilized react-native to make an application that works both on iOS and Android platforms.',
             b2: 'Built on a Ruby on Rails backend to manage data from both the API that supplied gambling information as well as user data.',
             b3: 'Leveraged Redux to maintain a user’s information throughout the entirety of the application.',
@@ -38,7 +38,7 @@ const Projects = (props) => {
             title: 'Fifteen Puzzle',
             image: Fifteen,
             imageType:'web',
-            desc: 'A sliding puzzle that trains spatial awareness and cognitive skills, with fifteen randomly arranged tiles and one empty tile',
+            desc: 'A sliding puzzle that trains spatial awareness and cognitive skills, with fifteen randomly arranged tiles',
             b1: 'Constructed a digital replica of a famous puzzle using Javascript and custom CSS.',
             b2: 'Developed a Ruby on Rails API backend to maintain overall top scores and individualized highscores.',
             b3: 'Engineered functionality to solve the puzzle if a user cannot finish it by themselves.',
@@ -53,8 +53,8 @@ const Projects = (props) => {
     })
     return (
         <div>
-            <p style={{ color: props.darkMode ? 'rgb(255,255,255)' : '', fontWeight: 'bold', fontSize: 22 }}>
-                Projects
+            <p style={{ color: props.darkMode ? 'rgb(255,255,255)' : '', fontWeight: 'bold', fontSize: 28, marginBottom:75 }}>
+                PROJECTS
             </p>
             <div>
                 {mapped}

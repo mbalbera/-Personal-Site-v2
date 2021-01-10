@@ -2,7 +2,7 @@ function Skills(props){
 
     return(
         <div id="Skills">
-            <p style={{ color: props.darkMode ? 'rgb(255,255,255)' : '', fontWeight: 'bold', fontSize: 22 }}>
+            <p style={{ color: props.darkMode ? 'rgb(255,255,255)' : '', fontWeight: 'bold', fontSize: 28, marginBottom: 75 }}>
                 SKILLS
             </p>
             <div style={{ display: 'flex', justifyContent: 'space-around' }}>
@@ -28,10 +28,10 @@ function Skills(props){
                     <p style={{ fontWeight: 'bold', color: props.darkMode ? 'rgb(230,230,230)' : 'rgb(17,17,17)' }}>TOOLS</p>
                     <p style={{color:props.darkMode ? 'rgb(230,230,230)' : 'rgb(17,17,17)'}}>AWS</p>
                     <p style={{color:props.darkMode ? 'rgb(230,230,230)' : 'rgb(17,17,17)'}}>Git</p>
-                    <p style={{color:props.darkMode ? 'rgb(230,230,230)' : 'rgb(17,17,17)'}}>Chrome DevTools</p>
                     <p style={{color:props.darkMode ? 'rgb(230,230,230)' : 'rgb(17,17,17)'}}>Postman</p>
                     <p style={{color:props.darkMode ? 'rgb(230,230,230)' : 'rgb(17,17,17)'}}>PostgreSQL</p>
                     <p style={{color:props.darkMode ? 'rgb(230,230,230)' : 'rgb(17,17,17)'}}>SQLite</p>
+                    <p style={{color:props.darkMode ? 'rgb(230,230,230)' : 'rgb(17,17,17)'}}>Chrome DevTools</p>
 
                 </div>
                 <div style={{ flexDirection: 'column', }}>

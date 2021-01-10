@@ -2,16 +2,16 @@ import react from 'react'
 
 const Background = (props) => {
     return (
-        <div>
-            <p style={{color:props.darkMode? 'rgb(230,230,230)': 'rgb(17,17,17)'}}>
-                Hi my name is
+        <div style={{padding:150, height:'85'}}>
+            <p style={{fontSize:30,color:props.darkMode? 'rgb(230,230,230)': 'rgb(17,17,17)', }}>
+                Hi! My name is
             </p>
-            <p style={{color:props.darkMode? 'rgb(230,230,230)': 'rgb(17,17,17)'}}>
+            <p style={{ fontWeight: 'bold', fontSize: 36, color: props.darkMode ? 'rgb(255,255,255)' : 'rgb(35,43,59)', }}>
                 Mason Balbera.
             </p>
-            <p style={{color:props.darkMode? 'rgb(230,230,230)': 'rgb(17,17,17)'}}>
-                I am a Full Stack Web and Mobile app developer creating engaging applications from ideation to completion.
-                Using JavaScript, React, React - Native, Ruby on Rails and Python I build awesome applications.Study of the law and success in financial planning has primed me to deliver simple and effective code.I am fully committed to every step of the process from scratch to launch.
+            <p style={{fontSize:30,color:props.darkMode? 'rgb(230,230,230)': 'rgb(17,17,17)', }}>
+                {/* I am a Full Stack Web and Mobile app developer creating engaging applications from ideation to completion. */}
+                I am a Full Stack Developer.
             </p>
         </div>
     )
