@@ -80,7 +80,7 @@ export class Email extends Component {
                     <div style={{ zIndex: 20, width: '100%', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: 70 }}>
                             <p style={{ fontSize: 22, color: this.props.darkMode ? 'rgb(230,230,230)' : 'rgb(17,17,17)' }}>
-                                I would love to hear from you!
+                                Have a question or want to work together?
                             </p>
                         </div>
                         <div style={{ width: '60%', height: '100%', display: 'flex', justifyContent: 'space-around', alignItems: 'center', padding: 10, margin: 'auto', marginBottom: 20 }}>
