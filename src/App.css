@@ -36,3 +36,125 @@
     transform: rotate(360deg);
   }
 }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, main, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* ======================================================
+BASICS
+====================================================== */
+body {
+  display: flex;
+	flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background: #232b3b;
+    color: #e8e8df;
+    font-size: 1rem;
+    font-family: 'Roboto', Arial, Verdana, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+h1 {
+  margin: 1rem 0 2rem 0;
+    font-size: 2rem;
+    font-weight: 500;
+}
+p {
+  margin-bottom: 1rem;
+    line-height: 120%;
+}
+/* ======================================================
+CONTAINERS
+====================================================== */
+header {
+  position: fixed;
+	top: 0;
+  width: 100%;
+  background: #232b3b;
+  clear: both;
+  z-index: 9999;
+}
+.header-container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.side-nav-container {
+  position: fixed;
+  /* background: #3c4659; */
+  background: #232b3b;
+  left: 0;
+  width: 185px;
+  height: 100%;
+  z-index: 9998;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* hide scrollbar IE and Edge */
+  scrollbar-width: none;  /* hide scrollbar Firefox */
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.side-nav-container::-webkit-scrollbar {
+ display: none;
+}
+.side-nav {
+  padding-top: 48px; /* equals to to the header height*/
+}
+.side-menu {
+  padding: 1rem;
+}
+main {
+  background: #f5f4f3;
+  color: #333333;
+  border-radius: 15px;
+  position: fixed;
+  top: 48px; /* match with header height */
+  left: 185px; /* match with side nav width */
+  height: 100%;
+  overflow: hidden;
+  z-index: 9997;
+}
+.main-container {
+  padding: 1rem;
+  height: 90%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* hide scrollbar IE and Edge */
+  scrollbar-width: none;  /* hide scrollbar Firefox */
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.main-container::-webkit-scrollbar {
+  display: none;
+}
