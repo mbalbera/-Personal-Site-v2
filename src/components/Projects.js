@@ -1,16 +1,13 @@
-import React, {useState} from 'react'
+import React from 'react'
 // components
-import Project from './Project'
 import ProjectSmall from './ProjectSmall'
-import ProjectBig from './pb2'
-// icons
-import { FaArrowLeft, FaArrowRight} from 'react-icons/fa'
+import Slider from './Slider'
 // imgs
 import Fifteen from '../assets/fifteenpuzzle.png'
+import CryptoLads from '../assets/cryptoLads.png'
 import AllocateRite from '../assets/allocaterite.png'
 import Microbets from '../assets/microbets.png'
 import Finx from '../assets/finx.png'
-import CryptoLads from '../assets/cryptoLads.png'
 
 const projs = [
     {
@@ -64,75 +61,22 @@ const projs = [
 ]
 const Projects = (props) => {
 
-    const [current, setCurrent] = useState(0)
-    const [hover, setHover] = useState('')
-
-    let mapped = []
-    projs.forEach((ele, idx) => {
+    const renderProjs = ()=>{
         if(props.isSmallScreen){
-            mapped.push(
-                <ProjectSmall info={ele} darkMode={props.darkMode}/>
-            )
+            return <div> {projs?.map((ele, idx)=>{ return <ProjectSmall info={ele} darkMode={props.darkMode} key={idx}/>})}</div>
         }
         else{
-            let isEven = idx % 2 !== 0
-            mapped.push(
-                <Project info={ele} isEven={isEven} darkMode={props.darkMode}/>
-            )
+            return <Slider slides={projs} isSmallScreen={props.isSmallScreen} darkMode={props.darkMode}/>
         }
-    })
-
-    const settingCurrent = (direction)=>{
-        let x = 0
-        if(direction){
-            x = current + 1 
-        }
-        else{
-            current === 0 ? x = projs.length - 1 : x = current - 1
-        }
-        setCurrent(x)
     }
 
     return (
-        <div>
-            <p style={{ color: props.darkMode ? 'rgb(255,255,255)' : 'rgb(17,17,17)', fontWeight: 'bold', fontSize: 28, margin: props.isSmallScreen ? 'auto' : '', marginBottom: 75, marginLeft: 10 }}>
+        <div id='Projects'>
+            <p style={{ color: props.darkMode ? 'rgb(255,255,255)' : 'rgb(17,17,17)', fontWeight: 'bold', fontSize: 28, margin: props.isSmallScreen ? 'auto' : '', marginBottom: 25, marginLeft: 10, paddingLeft:props.isSmallScreen? 50:150, paddingRight:props.isSmallScreen? 50:150  }}>
                 PROJECTS
             </p>
-            {/* <div>
-                {mapped}
-            </div> */}
-            <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', height:'80%', width:'100%', height:'100%'}}>
-                <div style={{width:'20%', height:'100%', display:'flex', alignItems:'center', justifyContent:'center' }}>
-                    <div 
-                        onMouseEnter={()=>setHover('left')} 
-                        onMouseLeave={()=>setHover('')} 
-                        style={{ width: '50px', height: '50px', backgroundColor: hover === 'left' ? props.darkMode ? 'rgb(35,43,59)' : '#D3D3D3' : 'transparent', borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
-                    >
-                        <FaArrowLeft 
-                            color={props.darkMode ? 'rgb(255,255,255)' : 'rgb(17,17,17)'} 
-                            onClick={() => settingCurrent(false)}
-                            size={35}
-                            style={{cursor:'pointer'}}
-                        />
-                    </div>
-                </div>
-                <div style={{width:'60%'}}>
-                    {props.isSmallScreen ? <ProjectSmall info={projs[current % projs.length]} darkMode={props.darkMode} /> : <ProjectBig info={projs[current % projs.length]} darkMode={props.darkMode} />}
-                </div>
-                <div style={{ width: '20%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                    <div
-                        onMouseEnter={() => setHover('right')}
-                        onMouseLeave={() => setHover('')}
-                        style={{ width: '50px', height: '50px', backgroundColor: hover === 'right' ? props.darkMode ? 'rgb(35,43,59)' : '#D3D3D3' : 'transparent', borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
-                    >
-                        <FaArrowRight
-                            color={props.darkMode ? 'rgb(255,255,255)' : 'rgb(17,17,17)'}
-                            onClick={() => settingCurrent(true)}
-                            size={35}
-                            style={{ cursor: 'pointer' }}
-                        />
-                    </div>
-                </div>
+            <div style={{padding:props.isSmallScreen? 25:75}}>
+                {renderProjs()}
             </div>
         </div>
     )
