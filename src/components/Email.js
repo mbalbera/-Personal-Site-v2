@@ -84,8 +84,8 @@ export class Email extends Component {
                             </p>
                         </div>
                         <div style={{ width: '60%', height: '100%', display: 'flex', justifyContent: 'space-around', alignItems: 'center', padding: 10, margin: 'auto', marginBottom: 20, flexDirection:this.props.isSmallScreen? 'column':'row' }}>
-                            <input type="text" placeholder="name" value={this.state.name} onChange={(e) => this.setState({ name: e.target.value })} style={{ paddingLeft: '0.5%', paddingRight: '0.5%' }} />
-                            <input type="text" placeholder="email" value={this.state.email} onChange={(e) => this.setState({ email: e.target.value })} style={{ paddingLeft: '0.5%', paddingRight: '0.5%', marginTop:this.props.isSmallScreen?10:'' }} />
+                            <input type="text" placeholder="name" value={this.state.name} onChange={(e) => this.setState({ name: e.target.value })} style={{ paddingLeft: 8, paddingRight: 8 }} />
+                            <input type="text" placeholder="email" value={this.state.email} onChange={(e) => this.setState({ email: e.target.value })} style={{ paddingLeft: 8, paddingRight: 8, marginTop:this.props.isSmallScreen?10:'' }} />
                         </div>
                         <div style={{ width: '100%', height: '60%', display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: 20 }}>
                             <textarea placeholder="Say hi!" style={{ height: 200, width: '60%', padding: '1%', fontFamily:'inherit' }} value={this.state.text} onChange={(e) => this.setState({ text: e.target.value })} />
