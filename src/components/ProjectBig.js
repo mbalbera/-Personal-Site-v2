@@ -13,10 +13,10 @@ const ProjectBig = (props) => {
                     {props.info.title}
                 </p>
             </div>
-            <div style={{display:'flex',}}>
+            <div style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
                 {
                     props.info.image &&
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 20 }}>
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 20, maxWidth:'60%' }}>
                         <img
                             src={props.info.image}
                             style={{ width: '60%', objectFit: 'scale-down' }}
