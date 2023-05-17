@@ -1,18 +1,57 @@
-import react from 'react'
+import React from 'react'
+import Resume from "../assets/resume.pdf"
 
 const Header = () => {
+
+  const handleScroll = (e,id) => {
+    console.log('handleScroll')
+    e.preventDefault();
+    const element = document.getElementById(id);
+    element.scrollIntoView({ behavior: 'smooth' });
+  };
+
     return (
-        <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around', alignItems: 'center', maxHeight:40 }}>
-            <div style={{width:'40%', display:'flex', }}>
-                <p style={{color:'rgb(255,255,255)', textAlign:'left', }}>Mason Balbera</p>
+        <header>
+          {/* <!-- header-container --> */}
+          <div className="header-container" >
+            <div style={{ height: 16, display: 'flex', justifyContent: 'space-between', alignItems: 'center', }}>
+              <div style={{ width: '40%', display: 'flex', }}>
+                <p style={{ color: 'rgb(255,255,255)', textAlign: 'left',margin:0, fontWeight:'bold' }}>Mason Balbera</p>
+              </div>
+              <div style={{ display: 'flex', justifyContent: 'space-around', width: '60%' }}>
+                <a 
+                  href="#projects" 
+                  onClick={(e) => handleScroll(e,'projects')} 
+                  style={{ color: 'rgb(255,255,255)', cursor: 'pointer', margin: 0, textDecoration:'none' }}
+                >
+                  Projects
+                </a>
+                <a 
+                  href="#skills" 
+                  onClick={(e) => handleScroll(e,'skills')} 
+                  style={{ color: 'rgb(255,255,255)', cursor: 'pointer', margin: 0, textDecoration:'none'}}
+                >
+                  Skills
+                </a>
+                <a 
+                  style={{textDecoration:'none'}}
+                  href={Resume} 
+                  target="_blank"
+                >
+                  <p style={{ color: 'rgb(255,255,255)', cursor: 'pointer', margin: 0, textDecoration:'none' }}>Resume</p>
+                </a>
+                <a 
+                  href="#contact" 
+                  onClick={(e) => handleScroll(e,'contact')} 
+                  style={{ color: 'rgb(255,255,255)', cursor: 'pointer', margin: 0, textDecoration:'none'}}
+                >Contact
+                </a>
+              </div>
             </div>
-            <div style={{display:'flex', justifyContent:'space-around', width:'60%'}}>
-                <p style={{ color: 'rgb(255,255,255)', cursor:'pointer', }}>Skills</p>
-                <p style={{ color: 'rgb(255,255,255)', cursor:'pointer', }}>Projects</p>
-                <p style={{ color: 'rgb(255,255,255)', cursor:'pointer', }}>Resume</p>
-                <p style={{ color: 'rgb(255,255,255)', cursor:'pointer', }}>Contact</p>
-            </div>
-        </div>
+            {/* <Header/> */}
+          </div>
+          {/* <!-- /header-container --> */}
+</header>
     )
 }
 
