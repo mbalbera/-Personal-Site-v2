@@ -1,5 +1,3 @@
-import react from 'react'
-
 const ProjectSmall = (props) => {
     return (
         <div style={{ display: 'flex', flexDirection:'column', width: '100%', marginBottom: 25, }}>

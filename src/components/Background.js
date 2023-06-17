@@ -20,7 +20,7 @@ const Background = (props) => {
             <p style={{fontSize:30,color:props.darkMode? 'rgb(230,230,230)': 'rgb(17,17,17)', }}>
                 Hi!
             </p>
-            <p style={{fontSize:30, cursor:'pointer', color:props.darkMode? 'rgb(230,230,230)': 'rgb(17,17,17)', cursor:'default'}}>
+            <p style={{fontSize:30, color:props.darkMode? 'rgb(230,230,230)': 'rgb(17,17,17)', cursor:'default'}}>
                 {showRightAmountOfText(props.isSmallScreen? smallText:bigText)}
                  <span style={{fontSize:20,color:props.darkMode? 'rgb(230,230,230)': 'rgb(17,17,17)', fontWeight:'bold', marginLeft:5 }} onClick={()=>setShowMore(!showMore)}>
                  {!showMore ? 'Show More' : ''}

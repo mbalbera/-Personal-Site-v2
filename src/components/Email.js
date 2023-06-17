@@ -9,7 +9,6 @@ export class Email extends Component {
         text: '',
     }
 
-
     componentDidMount() {
         window.scrollTo(0, 0);
     }
@@ -76,7 +75,7 @@ export class Email extends Component {
     render() {
         return (
             <div style={{ width: this.props.isSmallScreen ? '80%' : '100%', margin: this.props.isSmallScreen ?'auto':''}}>
-                <div style={{ marginTop: 50, width: '100%', marginTop: 15, }}>
+                <div style={{ width: '100%', marginTop: 15, }}>
                     <div style={{ zIndex: 20, width: '100%', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: 70 }}>
                             <p style={{ fontSize: 22, color: this.props.darkMode ? 'rgb(230,230,230)' : 'rgb(17,17,17)' }}>
