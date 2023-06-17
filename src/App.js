@@ -37,7 +37,7 @@ class App extends React.Component{
     if(this.state.isSmallScreen){
       return(
         <div style={{width:'100%'}}>
-          <div style={{ width: '100%', position: 'fixed', top: 0, height: 75, display: 'flex', justifyContent: 'space-around', alignItems: 'center', backgroundColor:'rgb(35,43,59)' }}>
+          <div style={{ width: '100%', position: 'fixed', top: 0, height: 75, display: 'flex', justifyContent: 'space-around', alignItems: 'center', backgroundColor:'rgb(6,11,16)' }}>
             <div>
               <p style={{ margin:0, fontSize: '22px', fontWeight: 'bold', color: ''}}>Mason Balbera</p>
             </div>
@@ -54,7 +54,7 @@ class App extends React.Component{
               />
             </div>
           </div>
-          <div style={{width:'95%', backgroundColor:this.state.darkMode?'rgb(60,70,88)':'rgb(255,255,255)', margin:'auto',marginTop:75, borderRadius:'12px'}}>
+          <div style={{width:'100%', backgroundColor:this.state.darkMode?'rgb(6,11,16)':'rgb(255,255,255)', margin:'auto',marginTop:75, borderRadius:'12px'}}>
             <div style={{ width: '100%' }}>
               <Background darkMode={this.state.darkMode} isSmallScreen={true} />
             </div>
@@ -126,7 +126,7 @@ class App extends React.Component{
         {/* <!-- main --> */}
         <main style={{ width: '-webkit-fill-available' }}>
           {/* <!-- main-container --> */}
-          <div className="main-container" style={{ backgroundColor: this.state.darkMode ? '#3c4659' : null, padding: 50, }}>
+          <div className="main-container" style={{ backgroundColor: this.state.darkMode ? 'rgb(6,11,16)' : null, padding: 50, }}>
             <div style={{ overflowY: 'scroll', marginBottom: 100}}>
               <div style={{width:'100%'}}>
                 <Background darkMode={this.state.darkMode} isSmallScreen={false}/>
