@@ -17,12 +17,12 @@ const LeftBar = (props) => {
             </div> */}
            
             <div style={{display:'flex', width:'100%', marginTop:150, justifyContent:'center',alignItems:'center'}}>
-                <a href="https://github.com/mbalbera" target="_blank">
+                <a href="https://github.com/mbalbera" target="_blank" rel="noreferrer">
                     <FaGithub color="rgb(255,255,255)" size="50" />
                 </a>
             </div>
             <div style={{display:'flex', width:'100%', marginTop:50, justifyContent:'center',alignItems:'center'}}>
-                <a href="https://www.linkedin.com/in/masonbalbera/" target="_blank">
+                <a href="https://www.linkedin.com/in/masonbalbera/" target="_blank" rel="noreferrer">
                     <FaLinkedin color="rgb(255,255,255)" size="50" />
                 </a>
             </div>

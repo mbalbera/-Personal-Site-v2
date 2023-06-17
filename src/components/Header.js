@@ -37,6 +37,7 @@ const Header = () => {
                   style={{textDecoration:'none'}}
                   href={Resume} 
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <p style={{ color: 'rgb(255,255,255)', cursor: 'pointer', margin: 0, textDecoration:'none' }}>Resume</p>
                 </a>

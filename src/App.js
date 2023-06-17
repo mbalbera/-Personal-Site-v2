@@ -71,13 +71,13 @@ class App extends React.Component{
               <Email darkMode={this.state.darkMode} isSmallScreen={true} />
             </div>
             <div style={{display:'flex', width: '100%', justifyContent:'space-around', alignItems:'center',paddingBottom:25 }}>
-              <a href="https://github.com/mbalbera" target="_blank">
+              <a href="https://github.com/mbalbera" target="_blank" rel="noreferrer">
                 <FaGithub color={this.state.darkMode ? "rgb(255,255,255)":'rgb(60,70,88)'} size="50" />
               </a>
-              <a href={Resume} target="_blank" style={{textDecoration:'none'}}>
+              <a href={Resume} target="_blank" rel="noreferrer" style={{textDecoration:'none'}}>
                 <p style={{ color:this.state.darkMode ?  'rgb(255,255,255)':'rgb(60,70,88)', cursor: 'pointer', margin: 0, textDecoration: 'none' }}>Resume</p>
               </a>
-              <a href="https://www.linkedin.com/in/masonbalbera/" target="_blank">
+              <a href="https://www.linkedin.com/in/masonbalbera/" target="_blank" rel="noreferrer">
                 <FaLinkedin color={this.state.darkMode ? "rgb(255,255,255)":'rgb(60,70,88)'} size="50" />
               </a>
             </div>
@@ -96,12 +96,12 @@ class App extends React.Component{
             <div style={{width:'60%', margin:'auto', height: '80%', }}>
               <ul className="side-menu">
                 <li style={{marginTop: '70%'}}>
-                  <a href="https://github.com/mbalbera" target="_blank">
+                  <a href="https://github.com/mbalbera" target="_blank" rel="noreferrer">
                     <FaGithub color="rgb(255,255,255)" size="50" />
                   </a>
                 </li>
                 <li style={{marginTop: '70%'}}>
-                  <a href="https://www.linkedin.com/in/masonbalbera/" target="_blank">
+                  <a href="https://www.linkedin.com/in/masonbalbera/" target="_blank" rel="noreferrer">
                     <FaLinkedin color="rgb(255,255,255)" size="50" />
                   </a>
                 </li>
