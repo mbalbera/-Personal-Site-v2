@@ -12,6 +12,7 @@ const ProjectSmall = (props) => {
                         <img
                             src={props.info.image}
                             style={{ width: props.info.imageType === 'phone' ?'50%':'100%', objectFit: 'scale-down' }}
+                            alt=""
                         />
                     </div>
                     :

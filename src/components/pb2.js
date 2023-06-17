@@ -11,6 +11,7 @@ const ProjectBig = (props) => {
                         <img
                             src={props.info.image}
                             style={{ width: isWeb ? '100%' :'60%', objectFit: 'scale-down', maxHeight:500 }}
+                            alt=""
                         />
                     </div>
                 }
